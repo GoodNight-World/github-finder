@@ -1,0 +1,22 @@
+.repos-container{
+    margin: 10px;
+}
+.repos-container h2 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Arial';
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.repos-details {
+    border: 1px solid #cfcfcf;
+    margin-bottom: 10px;
+    padding: 24px 13px;
+}
+
+.repos-details span {
+    border-radius: 3px;
+    padding: 3px 15px;
+    margin: 2px;
+    position: relative;
+    float: right;
+    right: 20%;
+}

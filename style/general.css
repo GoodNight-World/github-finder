@@ -1,0 +1,29 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blue {
+    background-color: rgb(102, 146, 255);
+}
+.gray {
+    background-color: #cfcfcf;
+}
+.green{
+    background-color: rgb(60, 195, 60);
+}
+.seagreen{
+    background-color: lightseagreen;
+}
+
+footer {
+    z-index: 100;
+    text-align: center;
+    background-color: #efefef;
+    padding: 16px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}

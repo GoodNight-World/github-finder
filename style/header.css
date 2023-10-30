@@ -1,0 +1,30 @@
+#top-bar {
+    color: white;
+    background-color: rgb(102, 146, 255);
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+.search-container {
+    border: 1px solid #cfcfcf;
+    margin: 10px;
+    padding: 20px;
+}
+
+.search-container h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Arial';
+    margin-bottom: 10px;
+}
+
+.search-container p {
+    color: #8d8d8d;
+}
+
+.search-container input{
+    border: 1px solid #cfcfcf;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
