@@ -25,7 +25,7 @@ searchBar.addEventListener('change', renderEvent);
 
 function renderEvent() {
     find(this.value)
-        .then(() => render(user))
+        .then(() => renderProfile(user))
         .catch(console.error);
 
     findRepos(this.value)
@@ -47,10 +47,8 @@ async function findRepos(username) {
     return data;
 }
 
-function render(user) {
+function renderProfile(user) {
     console.log(user);
-
-    //------- Profile Container -------//
 
     const profileContainer = document.querySelector('.profile-container');
     while(profileContainer.hasChildNodes()){
@@ -68,6 +66,9 @@ function render(user) {
     const viewBtn = document.createElement('button');
     viewBtn.textContent = 'View Profile';
     viewBtn.id = 'view-btn';
+    viewBtn.addEventListener('click', () => {
+        window.location.href = `https://github.com/${user.username}`;
+    });
     profileImg.append(viewBtn);
 
     const profileInfo = document.createElement('div');
@@ -112,11 +113,9 @@ function render(user) {
     countInfo.append(publicGists);
     countInfo.append(followers);
     countInfo.append(following);
-
 }
 
 function renderRepos(repos) {
-     // -------- Repos Container -------- //
      const reposContainer = document.querySelector('.repos-container');
      while(reposContainer.hasChildNodes()){
          reposContainer.removeChild(reposContainer.firstChild);
